@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void find_weather()
     {
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=Hyderabad&mode=json&appid=212c66a25a472c08ed353270edf23703&units=metric";
+        // Paste your api id in the below url
+        String url = "http://api.openweathermap.org/data/2.5/weather?q=Hyderabad&mode=json&appid= &units=metric";
 
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
